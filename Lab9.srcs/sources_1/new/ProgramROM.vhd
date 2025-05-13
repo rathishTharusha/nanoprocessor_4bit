@@ -45,11 +45,11 @@ architecture Behavioral of ProgramROM is
     -- Initialize ROM with your program
     constant ROM_Data : ROM_Array := (
         -- Format: 1 0 RRR 000 DDDD (MOVI)
-        "100000000111",  -- MOVI R0, 7 (Address 0)
-        "100100000001",  -- MOVI R1, 1 (Address 1)
-        "010100000000",  -- NEG R1     (Address 2)
-        "000100010000",  -- ADD R0, R1 (Address 3)
-        "110000000111",  -- JZR R0, 7  (Address 4)
+        "100010001010",  -- MOVI R1, 10 (Address 0)
+        "100100000001",  -- MOVI R2, 1 (Address 1)
+        "010100000000",  -- NEG R2     (Address 2)
+        "000010100000",  -- ADD R1, R2 (Address 3)
+        "110010000111",  -- JZR R1, 7  (Address 4)
         "110000000011",  -- JZR R0, 3  (Address 5)
         "000000000000",  -- NOP        (Address 6)
         "000000000000"   -- NOP        (Address 7)
