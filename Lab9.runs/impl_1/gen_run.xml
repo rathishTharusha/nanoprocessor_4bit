@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747118855">
-  <File Type="PA-TCL" Name="Processor_4bit.tcl"/>
   <File Type="PWROPT-DCP" Name="Processor_4bit_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="Processor_4bit.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Processor_4bit_postplace_pwropt.dcp"/>
   <File Type="REPORTS-TCL" Name="Processor_4bit_reports.tcl"/>
   <File Type="BG-DRC" Name="Processor_4bit.drc"/>
-  <File Type="OPT-HWDEF" Name="Processor_4bit.hwdef"/>
   <File Type="OPT-DCP" Name="Processor_4bit_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="Processor_4bit.hwdef"/>
   <File Type="PLACE-DCP" Name="Processor_4bit_placed.dcp"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Processor_4bit_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Processor_4bit_postplace_pwropt.dcp"/>
   <File Type="PHYSOPT-DCP" Name="Processor_4bit_physopt.dcp"/>
   <File Type="BG-BIT" Name="Processor_4bit.bit"/>
   <File Type="ROUTE-ERROR-DCP" Name="Processor_4bit_routed_error.dcp"/>

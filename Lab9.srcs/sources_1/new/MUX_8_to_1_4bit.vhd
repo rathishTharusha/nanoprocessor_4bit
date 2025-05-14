@@ -59,7 +59,7 @@ begin
         when "101" => Y <= D5;
         when "110" => Y <= D6;
         when "111" => Y <= D7;
-        when others => Y <= (others => '0'); -- Default case
+        when others => Y <= "0000"; -- Default case
     end case;
 end process;
 
