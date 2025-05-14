@@ -267,4 +267,6 @@ ProgramROM_0: ProgramROM
     Instruction => Instruction
 );
 
+Data <= Data_in;
+
 end Behavioral;
