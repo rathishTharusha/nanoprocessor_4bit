@@ -1,0 +1,25 @@
+# Ignore Vivado generated directories and files
+*.jou
+*.log
+*.pb
+*.xml
+*.bat
+*.wdb
+*.str
+*.backup
+*.tmp
+*.vdb
+*.rlx
+
+# Ignore Vivado simulation and implementation outputs
+*.runs/
+*.sim/
+*.cache/
+*.ip_user_files/
+*.webtalk/
+*.Xil/
+*.hw/
+
+# Optional: exclude specific project runs
+Lab9.runs/
+Lab9.sim/
