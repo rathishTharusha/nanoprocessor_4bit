@@ -153,13 +153,13 @@ Register_Bank_0: Register_Bank
     RegEn => RegEn,
     Res => Res,
     Clk => Slow_clk,
-    Data_out_0 => D7, 
-    Data_out_1 => D7, 
-    Data_out_2 => D7, 
-    Data_out_3 => D7, 
-    Data_out_4 => D7, 
-    Data_out_5 => D7, 
-    Data_out_6 => D7, 
+    Data_out_0 => D0, 
+    Data_out_1 => D1, 
+    Data_out_2 => D2, 
+    Data_out_3 => D3, 
+    Data_out_4 => D4, 
+    Data_out_5 => D5, 
+    Data_out_6 => D6, 
     Data_out_7 => D7
 );
 
