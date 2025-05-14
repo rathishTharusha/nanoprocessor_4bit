@@ -38,9 +38,15 @@ begin
         Res <= '1'; wait for 15 ns;
         Res <= '0'; Data_in <= "0101";
         
-        RegEn <= "001"; wait for 10 ns; -- Write to R1
-        RegEn <= "010"; wait for 10 ns; -- Write to R2
-        RegEn <= "100"; wait for 10 ns; -- Write to R4
+        RegEn <= "001"; wait for 50 ns; -- Write to R1
+        RegEn <= "010"; wait for 50 ns; -- Write to R2
+        Data_in <= "1010"; RegEn <= "100"; wait for 50 ns; -- Write to R4
+        Data_in <= "1001"; RegEn <= "001"; wait for 50 ns; -- Write to R1
+        RegEn <= "011"; wait for 50 ns; -- Write to R2
+        Data_in <= "1101"; RegEn <= "101"; wait for 50 ns; -- Write to R4
+        RegEn <= "111"; wait for 50 ns; -- Write to R1
+        Data_in <= "0111"; RegEn <= "110"; wait for 50 ns; -- Write to R2
+        Data_in <= "0101"; RegEn <= "101"; wait for 50 ns; -- Write to R4
         RegEn <= "000"; Data_in <= "1010"; wait for 10 ns; -- No write
         
         Res <= '1'; wait for 10 ns; -- Test reset

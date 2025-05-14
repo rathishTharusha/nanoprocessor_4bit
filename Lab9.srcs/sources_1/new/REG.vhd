@@ -41,55 +41,18 @@ end REG;
 
 architecture Behavioral of REG is
 
-COMPONENT D_FF
-    Port ( D : in STD_LOGIC;
-           Res : in STD_LOGIC;
-           Clk : in STD_LOGIC;
-           Q : out STD_LOGIC;
-           Qbar : out STD_LOGIC);
-end COMPONENT;
-
-SIGNAL D_cur: std_logic_vector (3 downto 0);
-
 begin
 
-D_FF_0: D_FF
-port map(
-D => D_cur(0),
-Res => Res,
-Clk => Clk,
-Q => Y(0)
-);
-
-D_FF_1: D_FF
-port map(
-D => D_cur(1),
-Res => Res,
-Clk => Clk,
-Q => Y(1)
-);
-
-D_FF_2: D_FF
-port map(
-D => D_cur(2),
-Res => Res,
-Clk => Clk,
-Q => Y(2)
-);
-
-D_FF_3: D_FF
-port map(
-D => D_cur(3),
-Res => Res,
-Clk => Clk,
-Q => Y(3)
-);
-
-process (En) begin
-
-if En = '1' then
-    D_cur <= D;
-end if;
+process (Clk) begin
+    if (rising_edge(Clk)) then
+        if Res = '1' then
+            Y <= "0000";
+        else
+            if En = '1' then
+                Y <= D;
+            end if;
+        end if;
+    end if;
 
 end process;
 

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="36" Path="C:/Users/This PC/vivado_projects/Lab9/Lab9.xpr">
+<Project Version="7" Minor="36" Path="C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d2f71dcbced44a3e9031e8314e5ea86e"/>
@@ -22,7 +22,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPOutputRepo" Val="C:/Users/This PC/vivado_projects/Lab9/Lab9.cache/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -33,7 +33,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="basys3"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="18"/>
+    <Option Name="WTXSimLaunchSim" Val="49"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -184,10 +184,28 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/imports/Downloads/Register_Bank_tb.vhdl">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Register_Bank_tb.vhdl"/>
+          <Attr Name="ImportTime" Val="1747118950"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/Downloads/REG_tb.vhdl">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../REG_tb.vhdl"/>
+          <Attr Name="ImportTime" Val="1747205213"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/imports/Downloads/PC_register_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/PC_register_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PC_register_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747118260"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -196,7 +214,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/D_FF_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/D_FF_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../D_FF_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747118026"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -205,7 +223,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/AddSub_4bit_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/AddSub_4bit_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../AddSub_4bit_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747117780"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -214,7 +232,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/Decoder_2_to_4_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Decoder_2_to_4_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Decoder_2_to_4_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747118050"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -223,7 +241,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/Instruction_Decoder_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Instruction_Decoder_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Instruction_Decoder_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747118236"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -232,17 +250,8 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/Decoder_3_to_8_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Decoder_3_to_8_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Decoder_3_to_8_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747118065"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/imports/Downloads/Register_Bank_tb.vhdl">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Register_Bank_tb.vhdl"/>
-          <Attr Name="ImportTime" Val="1747118950"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -250,7 +259,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/MUX_2_to_1_3bit_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/MUX_2_to_1_3bit_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MUX_2_to_1_3bit_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747118108"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -259,7 +268,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/Add_3bit_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Add_3bit_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Add_3bit_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747117906"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -268,7 +277,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/MUX_2_to_1_4bit_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/MUX_2_to_1_4bit_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MUX_2_to_1_4bit_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747118137"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -277,7 +286,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Downloads/MUX_8_to_1_4bit_tb.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/MUX_8_to_1_4bit_tb.vhdl"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MUX_8_to_1_4bit_tb.vhdl"/>
           <Attr Name="ImportTime" Val="1747118161"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

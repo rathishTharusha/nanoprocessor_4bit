@@ -1,0 +1,2015 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed May 14 11:22:17 2025
+# Process ID: 9440
+# Current directory: C:/Users/This PC/Downloads/nanoprocessor_4bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9972 C:\Users\This PC\Downloads\nanoprocessor_4bit\Lab9.xpr
+# Log file: C:/Users/This PC/Downloads/nanoprocessor_4bit/vivado.log
+# Journal file: C:/Users/This PC/Downloads/nanoprocessor_4bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/This PC/vivado_projects/Lab9' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 879.602 ; gain = 144.070
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/AddSub_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AddSub_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Add_3bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Add_3bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/D_FF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity D_FF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Decoder_2_to_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_2_to_4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Decoder_3_to_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_3_to_8
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Flag_Bank.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flag_Bank
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_2_to_1_3bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2_to_1_3bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_2_to_1_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2_to_1_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_8_to_1_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_8_to_1_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/PC_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC_register
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Processor_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Processor_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramROM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Register_Bank.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_Bank
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Slow_Clock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Slow_Clock
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/new/Processor_4bit_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Processor_4bit_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/This -notrace
+invalid command name "[4904:337C][2025-05-11T18:48:30]i001:"
+    while executing
+"[4904:337C][2025-05-11T18:48:30]i001: Burn v3.14.1.8722, Windows v10.0 (Build 22631: Service Pack 0), path: C:\WINDOWS\Temp\{9E0BA92B-FF76-4814-A4D1-9..."
+    (file "C:/Users/This" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Wed May 14 11:23:41 2025...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 905.598 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 917.379 ; gain = 11.781
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Processor_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Processor_4bit
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 944.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Processor_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Processor_4bit
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 944.836 ; gain = 0.000
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/PC_register_0/D}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 952.609 ; gain = 1.551
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/Data_out_0}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/Data_out_1}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/Data_out_2}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 956.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramROM
+ERROR: [VRFC 10-1412] syntax error near "100010001010" [C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd:49]
+ERROR: [VRFC 10-1412] syntax error near ) [C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd:57]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd:40]
+INFO: [VRFC 10-240] VHDL file C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramROM
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 959.500 ; gain = 1.758
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramROM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 962.613 ; gain = 0.000
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Instruction_Decoder_0/RegEn}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 962.676 ; gain = 0.062
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/Data_in}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/Decoder_3_to_8_0/Y}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 966.223 ; gain = 0.000
+set_property top REG [current_fileset]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{C:/Users/This PC/Downloads/REG_tb.vhdl}}
+update_compile_order -fileset sim_1
+set_property top REG_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'REG_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj REG_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/REG_tb.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot REG_tb_behav xil_defaultlib.REG_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_tb
+Built simulation snapshot REG_tb_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/This -notrace
+invalid command name "[4904:337C][2025-05-11T18:48:30]i001:"
+    while executing
+"[4904:337C][2025-05-11T18:48:30]i001: Burn v3.14.1.8722, Windows v10.0 (Build 22631: Service Pack 0), path: C:\WINDOWS\Temp\{9E0BA92B-FF76-4814-A4D1-9..."
+    (file "C:/Users/This" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Wed May 14 12:17:30 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "REG_tb_behav -key {Behavioral:sim_1:Functional:REG_tb} -tclbatch {REG_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+WARNING: Simulation object /Processor_4bit_tb/Res was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Clk was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Slow_Clock_0/Clk_out was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/PC_register_0/D was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Data was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Flags was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Instruction_Decoder_0/RegEn was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/Decoder_3_to_8_0/Y was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/Data_in was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/Data_out_0 was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/Data_out_1 was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/Data_out_2 was not found in the design.
+source REG_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Max value load failed
+Time: 60 ns  Iteration: 0  Process: /REG_tb/stim_proc  File: C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/REG_tb.vhdl
+Error: Min value load failed
+Time: 70 ns  Iteration: 0  Process: /REG_tb/stim_proc  File: C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/REG_tb.vhdl
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'REG_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 986.523 ; gain = 8.434
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/REG_tb/D}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/REG_tb}} 
+set_property top PC_register [current_fileset]
+update_compile_order -fileset sources_1
+set_property top REG [current_fileset]
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'REG_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj REG_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot REG_tb_behav xil_defaultlib.REG_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "REG_tb_behav -key {Behavioral:sim_1:Functional:REG_tb} -tclbatch {REG_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source REG_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Max value load failed
+Time: 60 ns  Iteration: 0  Process: /REG_tb/stim_proc  File: C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/REG_tb.vhdl
+Error: Min value load failed
+Time: 70 ns  Iteration: 0  Process: /REG_tb/stim_proc  File: C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/REG_tb.vhdl
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'REG_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 988.363 ; gain = 0.996
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'REG_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj REG_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot REG_tb_behav xil_defaultlib.REG_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_tb
+Built simulation snapshot REG_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "REG_tb_behav -key {Behavioral:sim_1:Functional:REG_tb} -tclbatch {REG_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source REG_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'REG_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 991.430 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'REG_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj REG_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot REG_tb_behav xil_defaultlib.REG_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_tb
+Built simulation snapshot REG_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "REG_tb_behav -key {Behavioral:sim_1:Functional:REG_tb} -tclbatch {REG_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source REG_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'REG_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 991.773 ; gain = 0.344
+set_property top Processor_4bit [current_fileset]
+set_property top Processor_4bit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+current_sim simulation_9
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+WARNING: Simulation object /REG_tb/D was not found in the design.
+WARNING: Simulation object /REG_tb/Res was not found in the design.
+WARNING: Simulation object /REG_tb/En was not found in the design.
+WARNING: Simulation object /REG_tb/Clk was not found in the design.
+WARNING: Simulation object /REG_tb/Y was not found in the design.
+WARNING: Simulation object /REG_tb/Clk_period was not found in the design.
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 992.832 ; gain = 0.949
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 993.125 ; gain = 0.293
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Slow_Clock_0/Clk_out}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Instruction_Decoder_0/RegEn}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Instruction_Decoder_0/ImVal}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/REG0}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/REG1/Y}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/REG0/D}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/REG0/Y}} 
+current_wave_config {Processor_4bit_tb_behav.wcfg*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Processor_4bit_tb_behav.wcfg*'.
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb/uut/Register_Bank_0/REG2/Y}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 995.398 ; gain = 1.379
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1001.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1001.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1001.547 ; gain = 0.000
+set_property top REG [current_fileset]
+update_compile_order -fileset sources_1
+set_property top REG_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_13
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'REG_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj REG_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot REG_tb_behav xil_defaultlib.REG_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_tb
+Built simulation snapshot REG_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "REG_tb_behav -key {Behavioral:sim_1:Functional:REG_tb} -tclbatch {REG_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+WARNING: Simulation object /Processor_4bit_tb/Clk was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Slow_Clock_0/Clk_out was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Res was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Data was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Flags was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Instruction_Decoder_0/RegEn was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Instruction_Decoder_0/ImVal was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG0/Y was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG1/Y was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG2/Y was not found in the design.
+source REG_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'REG_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1001.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'REG_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj REG_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/REG_tb.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot REG_tb_behav xil_defaultlib.REG_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_tb
+Built simulation snapshot REG_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "REG_tb_behav -key {Behavioral:sim_1:Functional:REG_tb} -tclbatch {REG_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+WARNING: Simulation object /Processor_4bit_tb/Clk was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Slow_Clock_0/Clk_out was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Res was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Data was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Flags was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Instruction_Decoder_0/RegEn was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Instruction_Decoder_0/ImVal was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG0/Y was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG1/Y was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG2/Y was not found in the design.
+source REG_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'REG_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1001.547 ; gain = 0.000
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/REG_tb}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'REG_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj REG_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot REG_tb_behav xil_defaultlib.REG_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "REG_tb_behav -key {Behavioral:sim_1:Functional:REG_tb} -tclbatch {REG_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+WARNING: Simulation object /Processor_4bit_tb/Clk was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Slow_Clock_0/Clk_out was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Res was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Data was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/Flags was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Instruction_Decoder_0/RegEn was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Instruction_Decoder_0/ImVal was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG0/Y was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG1/Y was not found in the design.
+WARNING: Simulation object /Processor_4bit_tb/uut/Register_Bank_0/REG2/Y was not found in the design.
+source REG_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'REG_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1002.012 ; gain = 0.465
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/REG_tb}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'REG_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj REG_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot REG_tb_behav xil_defaultlib.REG_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "REG_tb_behav -key {Behavioral:sim_1:Functional:REG_tb} -tclbatch {REG_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source REG_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'REG_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1002.637 ; gain = 0.625
+set_property top Processor_4bit [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Processor_4bit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top Register_Bank_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top Register_Bank [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Register_Bank_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Register_Bank_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/Register_Bank_tb.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_Bank_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Register_Bank_tb_behav xil_defaultlib.Register_Bank_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_bank_tb
+Built simulation snapshot Register_Bank_tb_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/This -notrace
+invalid command name "[4904:337C][2025-05-11T18:48:30]i001:"
+    while executing
+"[4904:337C][2025-05-11T18:48:30]i001: Burn v3.14.1.8722, Windows v10.0 (Build 22631: Service Pack 0), path: C:\WINDOWS\Temp\{9E0BA92B-FF76-4814-A4D1-9..."
+    (file "C:/Users/This" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Wed May 14 13:14:25 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Register_Bank_tb_behav -key {Behavioral:sim_1:Functional:Register_Bank_tb} -tclbatch {Register_Bank_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+WARNING: Simulation object /REG_tb/D was not found in the design.
+WARNING: Simulation object /REG_tb/Res was not found in the design.
+WARNING: Simulation object /REG_tb/En was not found in the design.
+WARNING: Simulation object /REG_tb/Clk was not found in the design.
+WARNING: Simulation object /REG_tb/Y was not found in the design.
+WARNING: Simulation object /REG_tb/Clk_period was not found in the design.
+source Register_Bank_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Register_Bank_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1003.992 ; gain = 0.000
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Register_Bank_tb}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Register_Bank_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Register_Bank_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Register_Bank_tb_behav xil_defaultlib.Register_Bank_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Register_Bank_tb_behav -key {Behavioral:sim_1:Functional:Register_Bank_tb} -tclbatch {Register_Bank_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Register_Bank_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Register_Bank_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1003.992 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Register_Bank_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Register_Bank_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/Register_Bank_tb.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_Bank_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Register_Bank_tb_behav xil_defaultlib.Register_Bank_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_bank_tb
+Built simulation snapshot Register_Bank_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Register_Bank_tb_behav -key {Behavioral:sim_1:Functional:Register_Bank_tb} -tclbatch {Register_Bank_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Register_Bank_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Register_Bank_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1004.766 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Register_Bank_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Register_Bank_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Register_Bank_tb_behav xil_defaultlib.Register_Bank_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_bank_tb
+Built simulation snapshot Register_Bank_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Register_Bank_tb_behav -key {Behavioral:sim_1:Functional:Register_Bank_tb} -tclbatch {Register_Bank_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Register_Bank_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Register_Bank_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.188 ; gain = 8.711
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Register_Bank_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Register_Bank_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REG
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Register_Bank_tb_behav xil_defaultlib.Register_Bank_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_bank_tb
+Built simulation snapshot Register_Bank_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Register_Bank_tb_behav -key {Behavioral:sim_1:Functional:Register_Bank_tb} -tclbatch {Register_Bank_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Register_Bank_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Register_Bank_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.188 ; gain = 0.000
+set_property top Processor_4bit [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Processor_4bit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_19
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.REG [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1_4bit [mux_8_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSub_4bit [addsub_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flag_Bank [flag_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_4bit [mux_2_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_3bit [add_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_register [pc_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor_4bit [processor_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.processor_4bit_tb
+Built simulation snapshot Processor_4bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+WARNING: Simulation object /Register_Bank_tb/Data_in was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/RegEn was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Res was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Clk was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Data_out_0 was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Data_out_1 was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Data_out_2 was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Data_out_3 was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Data_out_4 was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Data_out_5 was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Data_out_6 was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/Data_out_7 was not found in the design.
+WARNING: Simulation object /Register_Bank_tb/clk_period was not found in the design.
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.664 ; gain = 2.816
+current_wave_config {Processor_4bit_tb_behav.wcfg}
+Processor_4bit_tb_behav.wcfg
+add_wave {{/Processor_4bit_tb}} 
+save_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_4bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Processor_4bit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d2f71dcbced44a3e9031e8314e5ea86e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Processor_4bit_tb_behav xil_defaultlib.Processor_4bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_4bit_tb_behav -key {Behavioral:sim_1:Functional:Processor_4bit_tb} -tclbatch {Processor_4bit_tb.tcl} -view {{C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/This PC/Downloads/nanoprocessor_4bit/Lab9.sim/sim_1/Processor_4bit_tb_behav.wcfg}
+source Processor_4bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_4bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.090 ; gain = 0.426
