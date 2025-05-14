@@ -134,7 +134,7 @@ COMPONENT ProgramROM
            Instruction : out STD_LOGIC_VECTOR (11 downto 0));
 end COMPONENT;
 
-SIGNAl LoadSel, Op, IfZ, JFlag, Over, Zero, Overflow, Slow_clk: std_logic;
+SIGNAl LoadSel, Op, JFlag, Over, Zero, Overflow, Slow_clk: std_logic;
 SIGNAL RegEn, RegSelA, RegSelB, JAdr, Address, Cnt_in, Cnt_out : std_logic_vector(2 downto 0);
 SIGNAL D0, D1, D2, D3, D4, D5, D6, D7, Data_in, RegA, RegB, RegS, ImVal : std_logic_vector(3 downto 0);
 SIGNAL Instruction : std_logic_vector(11 downto 0);
@@ -226,7 +226,7 @@ MUX_2_to_1_4bit_0: MUX_2_to_1_4bit
 Instruction_Decoder_0: Instruction_Decoder
     port map ( 
     Instruction => Instruction,
-    CheckZ => IfZ,
+    CheckZ => Zero,
     RegEn => RegEn,
     LoadSel => LoadSel,
     ImVal => ImVal,

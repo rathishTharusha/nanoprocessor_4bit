@@ -68,7 +68,7 @@ REG0: REG
 port map(
     D => "0000",
     Res => Res,
-    En => En(0),
+    En => '1',
     Clk => Clk,
     Y =>  Data_out_0
 );

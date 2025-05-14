@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xsim.dir/Processor_4bit_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed May 14 15:53:11 2025" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed May 14 20:17:43 2025" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2188600" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "188eedf7-e44d-4cd1-b39e-c173d41f21c6" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "d2f71dcbced44a3e9031e8314e5ea86e" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "33" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "69" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "AMD Ryzen 5 7535HS with Radeon Graphics        " -context "user_environment"
@@ -33,10 +33,10 @@ webtalk_add_data -client xsim -key Debug -value "typical" -context "xsim\\comman
 webtalk_add_data -client xsim -key Simulation_Image_Code -value "83 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Image_Data -value "7 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Total_Processes -value "90" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Total_Processes -value "91" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "47" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "0.64_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "54220_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2023136472 -regid "" -xml C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xsim.dir/Processor_4bit_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xsim.dir/Processor_4bit_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xsim.dir/Processor_4bit_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "0.67_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "54252_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2164595252 -regid "" -xml C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xsim.dir/Processor_4bit_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xsim.dir/Processor_4bit_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.sim/sim_1/behav/xsim/xsim.dir/Processor_4bit_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
