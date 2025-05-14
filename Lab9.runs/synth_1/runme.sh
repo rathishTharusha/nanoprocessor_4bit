@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/This PC/vivado_projects/Lab9/Lab9.runs/synth_1'
+HD_PWD='C:/Users/ASUS/nanoprocessor_4bit/Lab9.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Processor_4bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor_4bit.tcl
+EAStep vivado -log Add_3bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Add_3bit.tcl

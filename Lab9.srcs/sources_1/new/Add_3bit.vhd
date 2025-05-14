@@ -81,6 +81,6 @@ C2 <= G1 OR (P1 AND G0);
 Q(0) <= P0;
 Q(1) <= C1 XOR P1;
 Q(2) <= C2 XOR P2;
-over <= G2; -- indicate end of the programme
+over <= G2 OR (P2 AND G1) OR (P2 AND P1 AND G0); -- indicate end of the programme
 
 end Behavioral;

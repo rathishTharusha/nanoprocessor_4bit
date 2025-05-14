@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/This PC/vivado_projects/Lab9/Lab9.srcs/sources_1/new/D_FF.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity D_FF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Add_3bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Add_3bit
