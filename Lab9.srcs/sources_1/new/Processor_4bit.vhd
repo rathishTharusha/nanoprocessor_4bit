@@ -210,8 +210,8 @@ Flag_Bank_0: Flag_Bank
     Op_in => Op,
     Data_in => Data_in,
     Zero => Flags(0),
-    Negative => Flags(1),
-    Overflow => Flags(2),
+    Negative => Flags(2),
+    Overflow => Flags(1),
     Over => Flags(3)
 );
 
@@ -267,6 +267,6 @@ ProgramROM_0: ProgramROM
     Instruction => Instruction
 );
 
-Data <= Data_in;
+Data <= D1;
 
 end Behavioral;
