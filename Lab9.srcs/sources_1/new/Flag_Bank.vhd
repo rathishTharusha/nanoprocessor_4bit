@@ -49,7 +49,7 @@ begin
 
 Zero <= Zero_in;
 Overflow <= Overflow_in;
-Negative <= Op_in AND Data_in(3);
+Negative <= Data_in(3);
 Over <= Over_in;
 
 end Behavioral;

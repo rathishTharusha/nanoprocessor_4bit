@@ -35,6 +35,8 @@ entity Processor_4bit is
     Port ( Clk : in STD_LOGIC;
            Res : in STD_LOGIC;
            Data : out STD_LOGIC_VECTOR (3 downto 0);
+           Data_seg : out STD_LOGIC_VECTOR (6 downto 0);
+           An_out: out STD_LOGIC_VECTOR (3 downto 0);
            Flags : out STD_LOGIC_VECTOR (3 downto 0));
 end Processor_4bit;
 
@@ -133,6 +135,12 @@ COMPONENT ProgramROM
     Port ( Address : in STD_LOGIC_VECTOR (2 downto 0);
            Instruction : out STD_LOGIC_VECTOR (11 downto 0));
 end COMPONENT;
+
+COMPONENT Seg7 
+    Port ( data_in : in STD_LOGIC_VECTOR (3 downto 0);
+           data_out : out STD_LOGIC_VECTOR (6 downto 0));
+end COMPONENT;
+
 
 SIGNAl LoadSel, Op, JFlag, Over, Zero, Overflow, Slow_clk: std_logic;
 SIGNAL RegEn, RegSelA, RegSelB, JAdr, Address, Cnt_in, Cnt_out : std_logic_vector(2 downto 0);
@@ -267,6 +275,13 @@ ProgramROM_0: ProgramROM
     Instruction => Instruction
 );
 
+Seg7_0: Seg7 
+    port map ( 
+    data_in => D1,
+    data_out => Data_seg
+);
+
+An_out <= "1110";
 Data <= D1;
 
 end Behavioral;
