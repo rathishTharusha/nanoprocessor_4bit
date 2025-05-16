@@ -36,7 +36,7 @@ entity Processor_4bit is
            Res : in STD_LOGIC;
            RegSel : in STD_LOGIC_VECTOR (2 downto 0);
            Data : out STD_LOGIC_VECTOR (3 downto 0);
-           Flags: out STD_LOGIC_VECTOR (3 downto 0));
+           Flags: out STD_LOGIC_VECTOR (2 downto 0));
 end Processor_4bit;
 
 architecture Behavioral of Processor_4bit is
@@ -107,13 +107,12 @@ COMPONENT Program_counter
            Res : in STD_LOGIC;
            JFlag : in STD_LOGIC;
            JAdr : in STD_LOGIC_VECTOR (2 downto 0);
-           Address : out STD_LOGIC_VECTOR (2 downto 0);
-           over : out STD_LOGIC);
+           Address : out STD_LOGIC_VECTOR (2 downto 0));
 end COMPONENT;
 
 type RegArray is array (0 to 7) of STD_LOGIC_VECTOR(3 downto 0);
 SIGNAL Registers : RegArray;
-SIGNAl LoadSel, Op, JFlag, Over, Zero_in, Zero, Cout, Overflow: std_logic;
+SIGNAl LoadSel, Op, JFlag, Zero_in, Zero, Cout, Overflow: std_logic;
 SIGNAL RegEn, RegSelA, RegSelB, JAdr, Address: std_logic_vector(2 downto 0);
 SIGNAL Data_in, RegA, RegB, RegS, ImVal : std_logic_vector(3 downto 0);
 SIGNAL Instruction : std_logic_vector(11 downto 0);
@@ -126,8 +125,7 @@ Program_counter_0:Program_counter
     Res => Res,
     JFlag => JFlag,
     JAdr => JAdr,
-    Address => Address,
-    over => Over
+    Address => Address
 );
 
 ProgramROM_0: ProgramROM  
@@ -228,7 +226,6 @@ Zero_in <= NOT (RegB(3) OR RegB(2) OR RegB(1) OR RegB(0));
 -- Flags
 Flags(0) <= Zero; -- zero flag
 Flags(1) <= Overflow; -- overflow flag
-Flags(2) <= Over; -- program end flag
-Flags(3) <= RegS(3); -- negative flag
+Flags(2) <= RegS(3); -- negative flag
 
 end Behavioral;

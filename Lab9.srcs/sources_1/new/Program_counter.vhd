@@ -36,8 +36,7 @@ entity Program_counter is
            Res : in STD_LOGIC;
            JFlag : in STD_LOGIC;
            JAdr : in STD_LOGIC_VECTOR (2 downto 0);
-           Address : out STD_LOGIC_VECTOR (2 downto 0);
-           over : out STD_LOGIC);
+           Address : out STD_LOGIC_VECTOR (2 downto 0));
 end Program_counter;
 
 architecture Behavioral of Program_counter is
@@ -63,6 +62,5 @@ begin
     end process;
     
     Address <= PC_reg;
-    over <= NOT(PC_reg(2) OR PC_reg(1) OR PC_reg(0));
 
 end Behavioral;

@@ -52,18 +52,18 @@ begin
     end process;
     
     process(Clk, Res)
-    begin
-        if Res = '1' then
-            Registers <= (others => (others => '0'));
-        elsif rising_edge(Clk) then
-            for i in 0 to 7 loop
-                if Decoder_out(i) = '1' then
-                    Registers(i) <= Data_in;
-                end if;
-            end loop;
-        end if;
-    end process;
-    
+        begin
+            if Res = '1' then
+                Registers <= (others => (others => '0'));
+            elsif rising_edge(Clk) then
+                for i in 0 to 7 loop
+                    if Decoder_out(i) = '1' then
+                        Registers(i) <= Data_in;
+                    end if;
+                end loop;
+            end if;
+        end process;
+        
     Data_out_0 <= Registers(0);
     Data_out_1 <= Registers(1);
     Data_out_2 <= Registers(2);

@@ -27,23 +27,23 @@ entity Slow_Clock is
            Clk_out : out STD_LOGIC);
 end Slow_Clock;
 
+-- Use a prescaler approach
 architecture Behavioral of Slow_Clock is
-    constant MAX_COUNT : integer := 24999999; 
-    signal count : unsigned(24 downto 0) := (others => '0'); 
-    signal clk_status : std_logic := '0';
+    constant PRESCALER : integer := 24; -- Reduced for simulation
+    signal count : integer range 0 to PRESCALER-1 := 0;
+    signal clk_div : std_logic := '0';
 begin
     process (Clk_in)
     begin
         if rising_edge(Clk_in) then
-            if count = MAX_COUNT then
-                clk_status <= not clk_status;
-                count <= (others => '0');
+            if count = PRESCALER-1 then
+                clk_div <= not clk_div;
+                count <= 0;
             else
                 count <= count + 1;
             end if;
         end if;
     end process;
-
-    -- Direct assignment of output
-    Clk_out <= clk_status;
+    
+    Clk_out <= clk_div;
 end Behavioral;
