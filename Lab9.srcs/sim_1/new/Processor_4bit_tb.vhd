@@ -59,13 +59,13 @@ begin
         Data => Data,
         Flags => Flags
     );
-    
-reset_process: process
-    begin
-    Res <= '1'; wait for 30 ns;
-    Res <= '0'; wait;
-end process;
 
+reset_process: process
+        begin
+        Res <= '1'; wait for 20 ns;
+        Res <= '0'; wait;
+    end process;
+    
 clk_process: process
     begin
         Clk <= '0'; wait for clk_period/2;

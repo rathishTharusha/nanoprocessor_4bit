@@ -2,8 +2,9 @@
 2018.1
 Apr  4 2018
 19:30:32
-C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sim_1/new/Processor_4bit_tb.vhd,1747234043,vhdl,,,,processor_4bit_tb,,,,,,,,
-C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/AddSub_4bit.vhd,1747216895,vhdl,,,,addsub_4bit,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sim_1/new/Processor_4bit_tb.vhd,1747381031,vhdl,,,,processor_4bit_tb,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sim_1/new/Register_Bank_tb.vhd,1747380124,vhdl,,,,register_bank_tb,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/AddSub_4bit.vhd,1747380735,vhdl,,,,addsub_4bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Add_3bit.vhd,1747216895,vhdl,,,,add_3bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/D_FF.vhd,1747216895,vhdl,,,,d_ff,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Decoder_2_to_4.vhd,1747216895,vhdl,,,,decoder_2_to_4,,,,,,,,
@@ -14,10 +15,11 @@ C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/HA.v
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Instruction_Decoder.vhd,1747216895,vhdl,,,,instruction_decoder,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_2_to_1_3bit.vhd,1747216895,vhdl,,,,mux_2_to_1_3bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_2_to_1_4bit.vhd,1747216895,vhdl,,,,mux_2_to_1_4bit,,,,,,,,
-C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_8_to_1_4bit.vhd,1747218181,vhdl,,,,mux_8_to_1_4bit,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_8_to_1_4bit.vhd,1747374959,vhdl,,,,mux_8_to_1_4bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/PC_register.vhd,1747216895,vhdl,,,,pc_register,,,,,,,,
-C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Processor_4bit.vhd,1747287842,vhdl,,,,processor_4bit,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Processor_4bit.vhd,1747380555,vhdl,,,,processor_4bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd,1747216895,vhdl,,,,programrom,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Program_counter.vhd,1747380957,vhdl,,,,program_counter,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd,1747216895,vhdl,,,,reg,,,,,,,,
-C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Register_Bank.vhd,1747233999,vhdl,,,,register_bank,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Register_Bank.vhd,1747376662,vhdl,,,,register_bank,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Slow_Clock.vhd,1747288636,vhdl,,,,slow_clock,,,,,,,,
