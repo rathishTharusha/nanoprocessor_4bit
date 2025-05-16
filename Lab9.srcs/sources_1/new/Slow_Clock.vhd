@@ -29,7 +29,7 @@ end Slow_Clock;
 
 -- Use a prescaler approach
 architecture Behavioral of Slow_Clock is
-    constant PRESCALER : integer := 24; -- Reduced for simulation
+    constant PRESCALER : integer := 16; -- Reduced for simulation
     signal count : integer range 0 to PRESCALER-1 := 0;
     signal clk_div : std_logic := '0';
 begin
