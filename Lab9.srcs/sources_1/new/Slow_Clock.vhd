@@ -18,18 +18,9 @@
 -- 
 ----------------------------------------------------------------------------------
 
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.NUMERIC_STD.ALL;
 
 entity Slow_Clock is
     Port ( Clk_in : in STD_LOGIC;
@@ -37,22 +28,22 @@ entity Slow_Clock is
 end Slow_Clock;
 
 architecture Behavioral of Slow_Clock is
-
-Signal count: integer := 1;
-Signal clk_status: std_logic := '0';
-
+    constant MAX_COUNT : integer := 24999999; 
+    signal count : unsigned(24 downto 0) := (others => '0'); 
+    signal clk_status : std_logic := '0';
 begin
+    process (Clk_in)
+    begin
+        if rising_edge(Clk_in) then
+            if count = MAX_COUNT then
+                clk_status <= not clk_status;
+                count <= (others => '0');
+            else
+                count <= count + 1;
+            end if;
+        end if;
+    end process;
 
-process (Clk_in) begin
-
-    if (rising_edge(Clk_in)) then
-        count <= count +1;
-        if (count = 50000000) then
-            clk_status <= not clk_status;
-            Clk_out <= clk_status;
-            count <= 1;
-        end if;       
-    end if;
-end process;
- 
+    -- Direct assignment of output
+    Clk_out <= clk_status;
 end Behavioral;

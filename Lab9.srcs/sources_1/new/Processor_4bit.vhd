@@ -34,6 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Processor_4bit is
     Port ( Clk : in STD_LOGIC;
            Res : in STD_LOGIC;
+           RegSel : in STD_LOGIC_VECTOR (2 downto 0);
            Data : out STD_LOGIC_VECTOR (3 downto 0);
            Flags: out STD_LOGIC_VECTOR (3 downto 0));
 end Processor_4bit;
@@ -193,6 +194,20 @@ MUX_8_to_1_4bit_1: MUX_8_to_1_4bit
     Y => RegA
 );
 
+MUX_8_to_1_4bit_2: MUX_8_to_1_4bit 
+    port map ( 
+    D0 => Registers(0), 
+    D1 => Registers(1), 
+    D2 => Registers(2), 
+    D3 => Registers(3), 
+    D4 => Registers(4), 
+    D5 => Registers(5), 
+    D6 => Registers(6), 
+    D7 => Registers(7), 
+    Sel => RegSel,
+    Y => data
+);
+
 AddSub_4bit_0: AddSub_4bit
 port map(
     A => RegA,
@@ -215,8 +230,5 @@ Flags(0) <= Zero; -- zero flag
 Flags(1) <= Overflow; -- overflow flag
 Flags(2) <= Over; -- program end flag
 Flags(3) <= RegS(3); -- negative flag
-
--- Data out
-data <= Registers(1);
 
 end Behavioral;
