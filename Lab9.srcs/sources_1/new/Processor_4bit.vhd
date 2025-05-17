@@ -82,8 +82,7 @@ COMPONENT Flag_Bank
     Port ( Zero_in : in STD_LOGIC;
            Overflow_in : in STD_LOGIC;
            Over_in : in STD_LOGIC;
-           Op_in : in STD_LOGIC;
-           Data_in : in STD_LOGIC_VECTOR (3 DOWNTO 0);
+           Data_in_3 : in STD_LOGIC;
            Zero : out STD_LOGIC;
            Negative : out STD_LOGIC;
            Overflow : out STD_LOGIC;
@@ -215,8 +214,7 @@ Flag_Bank_0: Flag_Bank
     Zero_in => Zero,
     Overflow_in => Overflow,
     Over_in => Over,
-    Op_in => Op,
-    Data_in => Data_in,
+    Data_in_3 => RegS(3),
     Zero => Flags(0),
     Negative => Flags(2),
     Overflow => Flags(1),

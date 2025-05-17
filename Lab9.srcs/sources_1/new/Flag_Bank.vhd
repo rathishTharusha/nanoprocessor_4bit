@@ -35,8 +35,7 @@ entity Flag_Bank is
     Port ( Zero_in : in STD_LOGIC;
            Overflow_in : in STD_LOGIC;
            Over_in : in STD_LOGIC;
-           Op_in : in STD_LOGIC;
-           Data_in : in STD_LOGIC_VECTOR (3 DOWNTO 0);
+           Data_in_3 : in STD_LOGIC;
            Zero : out STD_LOGIC;
            Negative : out STD_LOGIC;
            Overflow : out STD_LOGIC;
@@ -49,7 +48,7 @@ begin
 
 Zero <= Zero_in;
 Overflow <= Overflow_in;
-Negative <= Data_in(3);
+Negative <= Data_in_3;
 Over <= Over_in;
 
 end Behavioral;
