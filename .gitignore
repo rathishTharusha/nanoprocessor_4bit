@@ -10,6 +10,12 @@
 *.tmp
 *.vdb
 *.rlx
+*.wdf
+*.zip
+*.rpt
+*.html
+*.xmsgs
+
 
 # Ignore Vivado simulation and implementation outputs
 *.runs/
