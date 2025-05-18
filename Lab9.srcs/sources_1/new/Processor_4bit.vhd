@@ -46,20 +46,8 @@ COMPONENT Register_Bank
            RegEn : in STD_LOGIC_VECTOR (2 downto 0);
            Res : in STD_LOGIC;
            Clk : in STD_LOGIC;
-           Data_out_0, Data_out_1, Data_out_2, Data_out_3, Data_out_4, Data_out_5, Data_out_6, Data_out_7 : out STD_LOGIC_VECTOR (3 downto 0));
-end COMPONENT;
-
-COMPONENT MUX_8_to_1_4bit 
-    Port ( D0 : in STD_LOGIC_VECTOR (3 downto 0);
-           D1 : in STD_LOGIC_VECTOR (3 downto 0);
-           D2 : in STD_LOGIC_VECTOR (3 downto 0);
-           D3 : in STD_LOGIC_VECTOR (3 downto 0);
-           D4 : in STD_LOGIC_VECTOR (3 downto 0);
-           D5 : in STD_LOGIC_VECTOR (3 downto 0);
-           D6 : in STD_LOGIC_VECTOR (3 downto 0);
-           D7 : in STD_LOGIC_VECTOR (3 downto 0);
-           Sel : in STD_LOGIC_VECTOR (2 downto 0);
-           Y : out STD_LOGIC_VECTOR (3 downto 0));
+           RegSel, RegSelB,  RegSelA : in STD_LOGIC_VECTOR (2 downto 0);
+           RegA, RegB, Data : out STD_LOGIC_VECTOR (3 downto 0));
 end COMPONENT;
 
 COMPONENT AddSub_4bit
@@ -110,18 +98,29 @@ COMPONENT Program_counter
            Address : out STD_LOGIC_VECTOR (2 downto 0));
 end COMPONENT;
 
+COMPONENT Slow_Clock
+    Port ( Clk_in : in STD_LOGIC;
+           Clk_out : out STD_LOGIC);
+end COMPONENT;
+
 type RegArray is array (0 to 7) of STD_LOGIC_VECTOR(3 downto 0);
 SIGNAL Registers : RegArray;
-SIGNAl LoadSel, Op, JFlag, Zero_in, Zero, Cout, Overflow: std_logic;
+SIGNAl LoadSel, Op, JFlag, Zero_in, Zero, Cout, Overflow, Slow_clk: std_logic;
 SIGNAL RegEn, RegSelA, RegSelB, JAdr, Address: std_logic_vector(2 downto 0);
 SIGNAL Data_in, RegA, RegB, RegS, ImVal : std_logic_vector(3 downto 0);
 SIGNAL Instruction : std_logic_vector(11 downto 0);
 
 begin
 
+Slow_Clock_0: Slow_Clock 
+    port map( 
+    Clk_in => Clk,
+    Clk_out => Slow_clk
+);
+
 Program_counter_0:Program_counter
     port map( 
-    Clk => Clk,
+    Clk => Slow_clk,
     Res => Res,
     JFlag => JFlag,
     JAdr => JAdr,
@@ -153,57 +152,13 @@ Register_Bank_0: Register_Bank
     Data_in => Data_in,
     RegEn => RegEn,
     Res => Res,
-    Clk => Clk,
-    Data_out_0 => Registers(0), 
-    Data_out_1 => Registers(1), 
-    Data_out_2 => Registers(2), 
-    Data_out_3 => Registers(3), 
-    Data_out_4 => Registers(4), 
-    Data_out_5 => Registers(5), 
-    Data_out_6 => Registers(6), 
-    Data_out_7 => Registers(7) 
-);
-
-MUX_8_to_1_4bit_0: MUX_8_to_1_4bit 
-    port map ( 
-    D0 => Registers(0), 
-    D1 => Registers(1), 
-    D2 => Registers(2), 
-    D3 => Registers(3), 
-    D4 => Registers(4), 
-    D5 => Registers(5), 
-    D6 => Registers(6), 
-    D7 => Registers(7), 
-    Sel => RegSelA,
-    Y => RegB
-);
-
-MUX_8_to_1_4bit_1: MUX_8_to_1_4bit 
-    port map ( 
-    D0 => Registers(0), 
-    D1 => Registers(1), 
-    D2 => Registers(2), 
-    D3 => Registers(3), 
-    D4 => Registers(4), 
-    D5 => Registers(5), 
-    D6 => Registers(6), 
-    D7 => Registers(7), 
-    Sel => RegSelB,
-    Y => RegA
-);
-
-MUX_8_to_1_4bit_2: MUX_8_to_1_4bit 
-    port map ( 
-    D0 => Registers(0), 
-    D1 => Registers(1), 
-    D2 => Registers(2), 
-    D3 => Registers(3), 
-    D4 => Registers(4), 
-    D5 => Registers(5), 
-    D6 => Registers(6), 
-    D7 => Registers(7), 
-    Sel => RegSel,
-    Y => data
+    Clk => Slow_clk,
+    RegSelA => RegSelA,
+    RegSelB => RegSelB,
+    RegSel => RegSel,
+    Data => Data, 
+    RegA => RegB, 
+    RegB => RegA
 );
 
 AddSub_4bit_0: AddSub_4bit

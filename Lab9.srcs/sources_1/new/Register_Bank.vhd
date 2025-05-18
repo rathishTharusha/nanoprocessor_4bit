@@ -36,41 +36,32 @@ entity Register_Bank is
            RegEn : in STD_LOGIC_VECTOR (2 downto 0);
            Res : in STD_LOGIC;
            Clk : in STD_LOGIC;
-           Data_out_0, Data_out_1, Data_out_2, Data_out_3, Data_out_4, Data_out_5, Data_out_6, Data_out_7 : out STD_LOGIC_VECTOR (3 downto 0));
+           RegSel, RegSelB,  RegSelA : in STD_LOGIC_VECTOR (2 downto 0);
+           RegA, RegB, Data : out STD_LOGIC_VECTOR (3 downto 0));
 end Register_Bank;
 
 architecture Behavioral of Register_Bank is
     type RegArray is array (0 to 7) of STD_LOGIC_VECTOR(3 downto 0);
     signal Registers : RegArray;
-    signal Decoder_out : STD_LOGIC_VECTOR(7 downto 0);
 begin
-    -- 3-to-8 Decoder (Lab 4)
-    process(RegEn)
+
+-- Hardwire R0 to "0000"
+    Registers(0) <= "0000";
+
+    -- Register write process
+    process(Clk)
     begin
-        Decoder_out <= (others => '0');
-        Decoder_out(to_integer(unsigned(RegEn))) <= '1';
-    end process;
-    
-    process(Clk, Res)
-        begin
+        if rising_edge(Clk) then
             if Res = '1' then
                 Registers <= (others => (others => '0'));
-            elsif rising_edge(Clk) then
-                for i in 0 to 7 loop
-                    if Decoder_out(i) = '1' then
-                        Registers(i) <= Data_in;
-                    end if;
-                end loop;
+            elsif RegEn /= "000" then
+                Registers(to_integer(unsigned(RegEn))) <= Data_in;
             end if;
-        end process;
-        
-    Data_out_0 <= Registers(0);
-    Data_out_1 <= Registers(1);
-    Data_out_2 <= Registers(2);
-    Data_out_3 <= Registers(3);
-    Data_out_4 <= Registers(4);
-    Data_out_5 <= Registers(5);
-    Data_out_6 <= Registers(6);
-    Data_out_7 <= Registers(7); 
+        end if;
+    end process;
     
+    RegA <= Registers(to_integer(unsigned(RegSelA)));
+    RegB <= Registers(to_integer(unsigned(RegSelB)));
+    Data <= Registers(to_integer(unsigned(RegSel)));
+
 end Behavioral;
