@@ -37,17 +37,25 @@ end Processor_4bit_tb;
 
 architecture Behavioral of Processor_4bit_tb is
     component Processor_4bit
-        Port ( Clk   : in STD_LOGIC;
-               Res   : in STD_LOGIC;
-               Data  : out STD_LOGIC_VECTOR(3 downto 0);
-               Flags : out STD_LOGIC_VECTOR(3 downto 0));
+        Port ( Clk : in STD_LOGIC;
+               Res : in STD_LOGIC;
+               Pause : in STD_LOGIC;
+               Step : in STD_LOGIC;
+               RegSel : in STD_LOGIC_VECTOR (2 downto 0);
+               Data : out STD_LOGIC_VECTOR (3 downto 0);
+               Data_seg : out STD_LOGIC_VECTOR (6 downto 0);
+               An_out: out STD_LOGIC_VECTOR (3 downto 0);
+               Flags : out STD_LOGIC_VECTOR (2 downto 0));
     end component;
 
     -- Testbench signals
-    signal Clk, Res : STD_LOGIC := '0';
+    signal Clk, Res, Pause, Step : STD_LOGIC := '0';
     signal Data : STD_LOGIC_VECTOR(3 downto 0);
-    signal Flags : STD_LOGIC_VECTOR(3 downto 0);
-        
+    signal Flags : STD_LOGIC_VECTOR(2 downto 0);
+    signal RegSel : STD_LOGIC_VECTOR(2 downto 0):= "101";
+    Signal Data_seg : STD_LOGIC_VECTOR (6 downto 0);
+    Signal An_out: STD_LOGIC_VECTOR (3 downto 0);
+            
     -- Clock period definitions
     constant Clk_period : time := 10 ns;
 
@@ -56,7 +64,12 @@ begin
     uut: Processor_4bit port map (
         Clk => Clk,
         Res => Res,
+        Pause => Pause,
+        Step => Step,
+        RegSel => RegSel,
         Data => Data,
+        Data_seg => Data_seg,
+        An_out => An_out,
         Flags => Flags
     );
     
