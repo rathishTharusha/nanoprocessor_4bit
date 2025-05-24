@@ -14,6 +14,7 @@ architecture Behavioral of AddSub_4bit_tb is
                Op : in STD_LOGIC;
                Q : out STD_LOGIC_VECTOR (3 downto 0);
                Overflow : out STD_LOGIC;
+               Cout: out STD_LOGIC;
                Zero : out STD_LOGIC);
     end component;
 
@@ -25,7 +26,7 @@ architecture Behavioral of AddSub_4bit_tb is
     -- Outputs
     signal Q : STD_LOGIC_VECTOR(3 downto 0);
     signal Overflow : STD_LOGIC;
-    signal Zero : STD_LOGIC;
+    signal Zero, Cout : STD_LOGIC;
 
 begin
 
@@ -36,6 +37,7 @@ begin
         Op => Op,
         Q => Q,
         Overflow => Overflow,
+        Cout => Cout,
         Zero => Zero
     );
 

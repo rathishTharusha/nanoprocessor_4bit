@@ -37,22 +37,22 @@ entity Slow_Clock is
 end Slow_Clock;
 
 architecture Behavioral of Slow_Clock is
-
-Signal count: integer := 1;
-Signal clk_status: std_logic := '0';
-
+    -- constant PRESCALER : integer := 2; -- Reduced for simulation
+    constant PRESCALER : integer := 33554432; -- for FPGA
+    signal count : integer range 0 to PRESCALER-1 := 0;
+    signal clk_div : std_logic := '0';
 begin
-
-process (Clk_in) begin
-
-    if (rising_edge(Clk_in)) then
-        count <= count +1;
-        if (count = 50000000) then
-            clk_status <= not clk_status;
-            Clk_out <= clk_status;
-            count <= 1;
-        end if;       
-    end if;
-end process;
- 
+    process (Clk_in)
+    begin
+        if rising_edge(Clk_in) then
+            if count = PRESCALER-1 then
+                clk_div <= not clk_div;
+                count <= 0;
+            else
+                count <= count + 1;
+            end if;
+        end if;
+    end process;
+    
+    Clk_out <= clk_div;
 end Behavioral;
