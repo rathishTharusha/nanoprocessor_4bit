@@ -39,22 +39,26 @@ architecture Behavioral of Processor_4bit_tb is
     component Processor_4bit
         Port ( Clk : in STD_LOGIC;
                Res : in STD_LOGIC;
-               Pause : in STD_LOGIC;
+               Run : in STD_LOGIC;
                Step : in STD_LOGIC;
+               Upload : in STD_LOGIC;
+               Data_write: in STD_LOGIC_VECTOR (11 downto 0);
                RegSel : in STD_LOGIC_VECTOR (2 downto 0);
-               Data : out STD_LOGIC_VECTOR (3 downto 0);
+               Command : out STD_LOGIC_VECTOR (11 downto 0);
                Data_seg : out STD_LOGIC_VECTOR (6 downto 0);
                An_out: out STD_LOGIC_VECTOR (3 downto 0);
                Flags : out STD_LOGIC_VECTOR (2 downto 0));
     end component;
 
     -- Testbench signals
-    signal Clk, Res, Pause, Step : STD_LOGIC := '0';
-    signal Data : STD_LOGIC_VECTOR(3 downto 0);
+    signal Clk, Res, Step, Upload : STD_LOGIC := '0';
+    signal Run: STD_LOGIC := '1';
+    signal Command : STD_LOGIC_VECTOR(11 downto 0);
     signal Flags : STD_LOGIC_VECTOR(2 downto 0);
-    signal RegSel : STD_LOGIC_VECTOR(2 downto 0):= "101";
+    signal RegSel : STD_LOGIC_VECTOR(2 downto 0):= "001";
     Signal Data_seg : STD_LOGIC_VECTOR (6 downto 0);
     Signal An_out: STD_LOGIC_VECTOR (3 downto 0);
+    Signal Data_write : STD_LOGIC_VECTOR (11 downto 0) := "000000000000";
             
     -- Clock period definitions
     constant Clk_period : time := 10 ns;
@@ -64,10 +68,12 @@ begin
     uut: Processor_4bit port map (
         Clk => Clk,
         Res => Res,
-        Pause => Pause,
+        Run => Run,
         Step => Step,
+        Upload => Upload,
+        Data_write => Data_write,
         RegSel => RegSel,
-        Data => Data,
+        Command => Command,
         Data_seg => Data_seg,
         An_out => An_out,
         Flags => Flags
@@ -76,7 +82,19 @@ begin
 reset_process: process
     begin
     Res <= '1'; wait for 30 ns;
-    Res <= '0'; wait;
+    Res <= '0'; 
+    wait for 300 ns;
+    Run <= '0'; wait for clk_period;
+    Res <= '1'; wait for 30 ns;
+    Res <= '0'; wait for clk_period;
+    RegSel <= "000";
+    Data_write <= "100010000011";
+    Upload <= '1'; wait for clk_period*5;
+    Upload <= '0';        
+    RegSel <= "001";
+    Run <= '1';
+        
+    wait;
 end process;
 
 clk_process: process
@@ -84,5 +102,7 @@ clk_process: process
         Clk <= '0'; wait for clk_period/2;
         Clk <= '1'; wait for clk_period/2;
     end process;
+
+
 
 end Behavioral;

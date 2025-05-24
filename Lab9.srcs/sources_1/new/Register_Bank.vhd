@@ -51,6 +51,7 @@ end COMPONENT;
 
 COMPONENT Decoder_3_to_8
     Port ( I : in STD_LOGIC_VECTOR (2 downto 0);
+           En: in STD_LOGIC;
            Y : out STD_LOGIC_VECTOR (7 downto 0));
 end COMPONENT;
 
@@ -61,6 +62,7 @@ begin
 Decoder_3_to_8_0:Decoder_3_to_8
 port map(
 I => RegEn,
+En => '1',
 Y => En
 );
 

@@ -11,31 +11,45 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1520000001fs"></ZoomEndTime>
-      <Cursor1Time time="486000000fs"></Cursor1Time>
+      <ZoomEndTime time="90194692fs"></ZoomEndTime>
+      <Cursor1Time time="33938000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <NameColumnWidth column_width="151"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="27" />
    <wvobject fp_name="/Processor_4bit_tb/Clk" type="logic">
       <obj_property name="ElementShortName">Clk</obj_property>
       <obj_property name="ObjectShortName">Clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Slow_Clock_0/Clk_out" type="logic">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Clk_out</obj_property>
-      <obj_property name="ObjectShortName">Clk_out</obj_property>
-      <obj_property name="label">Slow_Clk</obj_property>
    </wvobject>
    <wvobject fp_name="/Processor_4bit_tb/Res" type="logic">
       <obj_property name="ElementShortName">Res</obj_property>
       <obj_property name="ObjectShortName">Res</obj_property>
    </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/Step" type="logic">
+      <obj_property name="ElementShortName">Step</obj_property>
+      <obj_property name="ObjectShortName">Step</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/Upload" type="logic">
+      <obj_property name="ElementShortName">Upload</obj_property>
+      <obj_property name="ObjectShortName">Upload</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/Run" type="logic">
+      <obj_property name="ElementShortName">Run</obj_property>
+      <obj_property name="ObjectShortName">Run</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_counter_0/Address" type="array">
+      <obj_property name="ElementShortName">Address[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[2:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/Processor_4bit_tb/Data" type="array">
       <obj_property name="ElementShortName">Data[3:0]</obj_property>
       <obj_property name="ObjectShortName">Data[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/Flags" type="array">
+      <obj_property name="ElementShortName">Flags[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Flags[2:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Processor_4bit_tb/RegSel" type="array">
       <obj_property name="ElementShortName">RegSel[2:0]</obj_property>
@@ -49,50 +63,68 @@
       <obj_property name="ElementShortName">An_out[3:0]</obj_property>
       <obj_property name="ObjectShortName">An_out[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/Flags" type="array">
-      <obj_property name="ElementShortName">Flags[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Flags[2:0]</obj_property>
+   <wvobject fp_name="/Processor_4bit_tb/Data_write" type="array">
+      <obj_property name="ElementShortName">Data_write[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_write[11:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/Clk_period" type="other">
-      <obj_property name="ElementShortName">Clk_period</obj_property>
-      <obj_property name="ObjectShortName">Clk_period</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Register_Bank_0/REG0/Y" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Y[3:0]</obj_property>
-      <obj_property name="ObjectShortName">Y[3:0]</obj_property>
-      <obj_property name="label">R0[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Register_Bank_0/REG1/Y" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Y[3:0]</obj_property>
-      <obj_property name="ObjectShortName">Y[3:0]</obj_property>
-      <obj_property name="label">R1[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Register_Bank_0/REG2/Y" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Y[3:0]</obj_property>
-      <obj_property name="ObjectShortName">Y[3:0]</obj_property>
-      <obj_property name="label">R2[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Instruction_Decoder_0/LoadSel" type="logic">
-      <obj_property name="ElementShortName">LoadSel</obj_property>
-      <obj_property name="ObjectShortName">LoadSel</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Instruction_Decoder_0/RegEn" type="array">
-      <obj_property name="ElementShortName">RegEn[2:0]</obj_property>
-      <obj_property name="ObjectShortName">RegEn[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Instruction_Decoder_0/Op" type="logic">
-      <obj_property name="ElementShortName">Op</obj_property>
-      <obj_property name="ObjectShortName">Op</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Instruction_Decoder_0/ImVal" type="array">
-      <obj_property name="ElementShortName">ImVal[3:0]</obj_property>
-      <obj_property name="ObjectShortName">ImVal[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Processor_4bit_tb/uut/Program_counter_0/Address" type="array">
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/Address" type="array">
       <obj_property name="ElementShortName">Address[2:0]</obj_property>
       <obj_property name="ObjectShortName">Address[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/Data_write" type="array">
+      <obj_property name="ElementShortName">Data_write[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_write[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/W_en" type="logic">
+      <obj_property name="ElementShortName">W_en</obj_property>
+      <obj_property name="ObjectShortName">W_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/Res" type="logic">
+      <obj_property name="ElementShortName">Res</obj_property>
+      <obj_property name="ObjectShortName">Res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/D0" type="array">
+      <obj_property name="ElementShortName">D0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/D1" type="array">
+      <obj_property name="ElementShortName">D1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/D2" type="array">
+      <obj_property name="ElementShortName">D2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/D3" type="array">
+      <obj_property name="ElementShortName">D3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/D4" type="array">
+      <obj_property name="ElementShortName">D4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D4[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/D5" type="array">
+      <obj_property name="ElementShortName">D5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D5[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/D6" type="array">
+      <obj_property name="ElementShortName">D6[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D6[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/D7" type="array">
+      <obj_property name="ElementShortName">D7[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D7[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_4bit_tb/uut/Program_RAM_0/write" type="array">
+      <obj_property name="ElementShortName">write[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write[7:0]</obj_property>
    </wvobject>
 </wave_config>
