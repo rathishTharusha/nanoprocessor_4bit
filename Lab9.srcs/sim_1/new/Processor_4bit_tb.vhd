@@ -39,6 +39,8 @@ architecture Behavioral of Processor_4bit_tb is
     component Processor_4bit
         Port ( Clk : in STD_LOGIC;
                Res : in STD_LOGIC;
+               ResRB : in STD_LOGIC;
+               ResRAM : in STD_LOGIC;
                Run : in STD_LOGIC;
                Step : in STD_LOGIC;
                Upload : in STD_LOGIC;
@@ -51,7 +53,7 @@ architecture Behavioral of Processor_4bit_tb is
     end component;
 
     -- Testbench signals
-    signal Clk, Res, Step, Upload : STD_LOGIC := '0';
+    signal Clk, Res, ResRAM, ResRB, Step, Upload : STD_LOGIC := '0';
     signal Run: STD_LOGIC := '1';
     signal Command : STD_LOGIC_VECTOR(11 downto 0);
     signal Flags : STD_LOGIC_VECTOR(2 downto 0);
@@ -68,6 +70,8 @@ begin
     uut: Processor_4bit port map (
         Clk => Clk,
         Res => Res,
+        ResRB => ResRB,
+        ResRAM => ResRAM,
         Run => Run,
         Step => Step,
         Upload => Upload,
@@ -81,8 +85,8 @@ begin
     
 reset_process: process
     begin
-    Res <= '1'; wait for 30 ns;
-    Res <= '0'; 
+    Res <= '1'; ResRAM <= '1'; ResRB <= '1'; wait for 30 ns;
+    Res <= '0'; ResRAM <= '0'; ResRB <= '0';
     wait for 300 ns;
     Run <= '0'; wait for clk_period;
     Res <= '1'; wait for 30 ns;

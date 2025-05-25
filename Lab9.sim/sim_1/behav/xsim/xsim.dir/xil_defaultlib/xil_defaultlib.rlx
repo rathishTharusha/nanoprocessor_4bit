@@ -3,7 +3,7 @@
 Apr  4 2018
 19:30:32
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sim_1/imports/Downloads/AddSub_4bit_tb.vhdl,1748072964,vhdl,,,,addsub_4bit_tb,,,,,,,,
-C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sim_1/new/Processor_4bit_tb.vhd,1748107462,vhdl,,,,processor_4bit_tb,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sim_1/new/Processor_4bit_tb.vhd,1748142291,vhdl,,,,processor_4bit_tb,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sim_1/new/Program_RAM_tb.vhd,1748100881,vhdl,,,,program_ram_tb,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/imports/new/AddSub_4bit.vhd,1747568265,vhdl,,,,addsub_4bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/imports/new/IO_System.vhd,1748080331,vhdl,,,,io_system,,,,,,,,
@@ -14,7 +14,7 @@ C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Inst
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_2_to_1_4bit.vhd,1748069276,vhdl,,,,mux_2_to_1_4bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_8_to_1_12bit.vhd,1748100538,vhdl,,,,mux_8_to_1_12bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/MUX_8_to_1_4bit.vhd,1748069276,vhdl,,,,mux_8_to_1_4bit,,,,,,,,
-C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Processor_4bit.vhd,1748107391,vhdl,,,,processor_4bit,,,,,,,,
+C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Processor_4bit.vhd,1748141958,vhdl,,,,processor_4bit,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/ProgramROM.vhd,1748069276,vhdl,,,,programrom,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/Program_RAM.vhd,1748104321,vhdl,,,,program_ram,,,,,,,,
 C:/Users/This PC/vivado_projects/nanoprocessor_4bit/Lab9.srcs/sources_1/new/REG.vhd,1748069276,vhdl,,,,reg,,,,,,,,

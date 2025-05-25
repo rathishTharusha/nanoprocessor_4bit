@@ -34,6 +34,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Processor_4bit is
     Port ( Clk : in STD_LOGIC;
            Res : in STD_LOGIC;
+           ResRB : in STD_LOGIC;
+           ResRAM : in STD_LOGIC;
            Run : in STD_LOGIC;
            Step : in STD_LOGIC;
            Upload : in STD_LOGIC;
@@ -155,7 +157,7 @@ Register_Bank_0: Register_Bank
     port map( 
     Data_in => Data_in,
     RegEn => RegEn,
-    Res => Res,
+    Res => ResRB,
     Clk => Slow_clk,
     Data_out_0 => D0, 
     Data_out_1 => D1, 
@@ -257,7 +259,7 @@ Program_RAM_0:Program_RAM
        Data_write => Data_write,
        W_en => Upload,
        Clk => Slow_clk,
-       Res => Res,
+       Res => ResRAM,
        Instruction => Instruction);
 
 IO_System_0_0: IO_System

@@ -108,16 +108,16 @@ set_property PACKAGE_PIN W4 [get_ports {An_out[3]}]
 
 
 ##Buttons
-#set_property PACKAGE_PIN U18 [get_ports Pause]
-	#set_property IOSTANDARD LVCMOS33 [get_ports Pause]
-set_property PACKAGE_PIN T18 [get_ports Upload]
-	set_property IOSTANDARD LVCMOS33 [get_ports Upload]
-set_property PACKAGE_PIN W19 [get_ports Res]
+set_property PACKAGE_PIN U18 [get_ports Res] 
 	set_property IOSTANDARD LVCMOS33 [get_ports Res]
-set_property PACKAGE_PIN T17 [get_ports Step]
+set_property PACKAGE_PIN T18 [get_ports Upload] 
+	set_property IOSTANDARD LVCMOS33 [get_ports Upload]
+set_property PACKAGE_PIN W19 [get_ports ResRB] 
+	set_property IOSTANDARD LVCMOS33 [get_ports ResRB]
+set_property PACKAGE_PIN T17 [get_ports Step] 
 	set_property IOSTANDARD LVCMOS33 [get_ports Step]
-#set_property PACKAGE_PIN U17 [get_ports btnD]
-	#set_property IOSTANDARD LVCMOS33 [get_ports btnD]
+set_property PACKAGE_PIN U17 [get_ports ResRAM] 
+	set_property IOSTANDARD LVCMOS33 [get_ports ResRAM]
 
 
 
