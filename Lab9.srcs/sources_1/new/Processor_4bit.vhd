@@ -34,10 +34,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Processor_4bit is
     Port ( Clk : in STD_LOGIC;
            Res : in STD_LOGIC;
-           Pause : in STD_LOGIC;
+           ResRB : in STD_LOGIC;
+           ResRAM : in STD_LOGIC;
+           Run : in STD_LOGIC;
            Step : in STD_LOGIC;
+           Upload : in STD_LOGIC;
+           Data_write: in STD_LOGIC_VECTOR (11 downto 0);
            RegSel : in STD_LOGIC_VECTOR (2 downto 0);
-           Data : out STD_LOGIC_VECTOR (3 downto 0);
+           Command : out STD_LOGIC_VECTOR (11 downto 0);
            Data_seg : out STD_LOGIC_VECTOR (6 downto 0);
            An_out: out STD_LOGIC_VECTOR (3 downto 0);
            Flags : out STD_LOGIC_VECTOR (2 downto 0));
@@ -102,9 +106,13 @@ COMPONENT Instruction_Decoder
            JAddress : out STD_LOGIC_VECTOR (2 downto 0));
 end COMPONENT;
 
-COMPONENT ProgramROM 
+COMPONENT Program_RAM
     Port ( Address : in STD_LOGIC_VECTOR (2 downto 0);
-           Instruction : out STD_LOGIC_VECTOR (11 downto 0));
+       Data_write: in STD_LOGIC_VECTOR (11 downto 0);
+       W_en: in STD_LOGIC;
+       Clk: in STD_LOGIC;
+       Res : in STD_LOGIC;
+       Instruction : out STD_LOGIC_VECTOR (11 downto 0));
 end COMPONENT;
 
 COMPONENT Seg7 
@@ -115,7 +123,7 @@ end COMPONENT;
 COMPONENT Program_counter
     Port ( Clk : in STD_LOGIC;
            Res : in STD_LOGIC;
-           Pause : in STD_LOGIC;
+           Run : in STD_LOGIC;
            Step : in STD_LOGIC;
            JFlag : in STD_LOGIC;
            JAdr : in STD_LOGIC_VECTOR (2 downto 0);
@@ -149,7 +157,7 @@ Register_Bank_0: Register_Bank
     port map( 
     Data_in => Data_in,
     RegEn => RegEn,
-    Res => Res,
+    Res => ResRB,
     Clk => Slow_clk,
     Data_out_0 => D0, 
     Data_out_1 => D1, 
@@ -239,19 +247,20 @@ Instruction_Decoder_0: Instruction_Decoder
 Program_counter_0: Program_counter 
     port map ( Clk => Slow_clk,
            Res => Res,
-           Pause => Pause,
+           Run => Run,
            Step => Step,
            JFlag => JFlag,
            JAdr => JAdr,
            Address => Address
            );
 
-
-ProgramROM_0: ProgramROM  
-    port map ( 
-    Address => Address,
-    Instruction => Instruction
-);
+Program_RAM_0:Program_RAM 
+    port map ( Address => Address,
+       Data_write => Data_write,
+       W_en => Upload,
+       Clk => Slow_clk,
+       Res => ResRAM,
+       Instruction => Instruction);
 
 IO_System_0_0: IO_System
     port map ( 
@@ -267,6 +276,6 @@ Flags(0) <= Zero;
 Flags(1) <= Overflow;
 Flags(2) <= RegS(3);
 
-Data <= REG;
+Command <= Instruction;
 
 end Behavioral;

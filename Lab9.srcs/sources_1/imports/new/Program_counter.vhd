@@ -34,7 +34,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity Program_counter is
     Port ( Clk : in STD_LOGIC;
            Res : in STD_LOGIC;
-           Pause : in STD_LOGIC;
+           Run : in STD_LOGIC;
            Step : in STD_LOGIC;
            JFlag : in STD_LOGIC;
            JAdr : in STD_LOGIC_VECTOR (2 downto 0);
@@ -55,7 +55,7 @@ begin
     PC_next <= JAdr when JFlag = '1' else PC_inc;
     
     -- Enable logic: Update PC if Run = '1' or Step = '1' on clock edge
-    enable <= NOT Pause or Step;
+    enable <= Run or Step;
     
     -- Update PC
     process(Clk, Res)
